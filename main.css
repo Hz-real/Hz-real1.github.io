@@ -1,0 +1,237 @@
+
+
+
+html {
+    font-size: 12px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+   
+    background: #007765;
+    position: sticky;
+    top: 0px;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    max-width: 1219px;
+    margin: 0 auto;
+    padding: 0 55px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: stretch;
+    align-items: center;
+}
+
+
+
+.header__logo {
+    padding: 19.5px 0;    
+}
+
+
+
+.header__nav-list li  {
+    list-style-type: none;
+    display: inline-block;    
+}
+
+.header__nav-list {
+    margin: 0 0;
+    padding: 0 0;
+    text-align: right;
+}
+
+.header__nav-list a {   
+    color: #fff;
+    text-decoration: none;
+   /* font-size: 24px;*/
+    font-size: calc(1rem + 0.6vw);
+    font-weight: 410;
+    line-height: 28.1px;    
+}
+
+.bg__title {
+    background: url(./img/image.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    color: #fff;
+    padding: 160px 0;
+    font-size: calc(1rem + 3vw);
+    /*font-size: 72px;*/
+    font-weight: 430;
+}
+
+.main {
+    background: #EEEEEE;
+}
+
+.main__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 48px;
+    font-size: calc(1rem + 2.8vw);
+    /*font-size: 64px;*/
+    font-weight: 430;
+    text-align: center;
+    color: #007765;
+}
+
+.main__paragraph {
+    margin: 0 0;
+    padding-top: 29px;
+    padding-bottom: 89px;
+    font-size: calc(1rem + 1.1vw);
+    /*font-size: 32px;*/
+    font-weight: normal;
+}
+
+.hero {
+    background: url(./img/hero.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.hero__text {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 129px;
+    padding-bottom: 129px;
+    font-size: calc(1rem + 1.92vw);
+    /*font-size: 48px;*/
+    font-weight: 430;
+    font-style: italic;
+    color: #fff;
+    text-align: center;
+}
+
+.introducing__title {
+    margin-top: 48px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #007765;
+    font-size: calc(1rem + 2.8vw);
+    /*font-size: 64px;*/
+    font-weight: 430;
+}
+
+.introducing__logo {
+    margin: 16px 48px 20px 0;
+    float: left;
+}
+
+.introducing__logo:after {
+    content: " ";
+	display: table;
+	clear: both;
+}
+
+.introducing__logo-paragraph {
+    font-size: calc(1rem + 1.1vw);
+   /*font-size: 32px;*/
+}
+
+.introducing__logo-paragraph-italic {
+    font-style: italic;
+}
+
+.introducing__paragraph {    
+    padding-bottom: 92px;
+    font-size: calc(1rem + 1.1vw);
+    /*font-size: 32px;*/
+}
+
+.container {
+    background: #EEEEEE;
+    padding-bottom: 84px;
+}
+
+.team__title {
+    margin-top: 0;
+    padding-top: 58px;
+    color: #007765;
+    font-size: calc(1rem + 2.8vw);
+    /*font-size: 64px;*/
+    font-weight: 430;
+    text-align: center;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    
+}
+
+.team__photo {
+    flex:1 1 calc(33.33% - 30px);
+    margin:10px;
+    padding: 30px 30px;
+    box-sizing:border-box;
+    text-align: center;
+    
+}
+
+.team__photo-title {
+    color: #007765;
+    font-size: calc(1rem + 0.6vw);
+    /*font-size: 24px;*/
+    font-weight: 600;
+    text-align: center;
+}
+
+.team__description{
+    font-size: calc(1rem + 0.3vw);
+    /*font-size: 18px;*/
+    font-style: italic;
+    text-align: center;
+}
+
+.footer {
+    background: #333;
+}
+
+.wrapper-footer {
+    box-sizing: border-box;
+    max-width: 540px;
+    margin: 0 auto;
+    color: #fff;
+    font-size: calc(1rem + 0.3vw);
+    /*font-size: 18px;*/
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 62px;
+    
+}
+
+@media screen and (max-width: 400px) {
+    .header__logo > img {
+        width: 80%;    
+    }
+
+    .introducing__logo img {
+    margin: 16px auto;
+    float: none;
+    text-align: center; 
+    }
+
+    .wrapper {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 10px;
+    }
+}
